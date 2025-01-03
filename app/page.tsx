@@ -26,7 +26,7 @@ const Page = async () => {
         <Header/>
         <div className=" w-screen h-12 bg-blue-200 flex">
           <input type="search" className="border border-black rounded-[5px] m-2" />
-        <button><Image src={"/search.webp"}
+        <button className="hover:bg-slate-800"><Image src={"/search.webp"}
         alt="icon"
         width={40}
         height={38}/></button>
@@ -35,7 +35,7 @@ const Page = async () => {
     <div className="grid bg-white grid-cols-3 w-screen gap-12">
       
       {parsedResponse.map((pro) => (
-        <div key={pro.id} className="hello bg-gray-300 gap-5 border p-2 text-left hover:font-semibold hover:h-auto hover:w-[450px] hover:relative  text-base hover:bg-blue-100 cursor-pointer border-black w-[350px] h-[600px] ml-2 ">
+        <div key={pro.id} className="hello bg-gray-300 gap-5 border p-2 text-left hover:shadow-md hover:shadow-red-400 hover:font-semibold hover:h-auto hover:w-[450px] hover:relative  text-base hover:bg-blue-100 cursor-pointer border-black w-[350px] h-[600px] ml-2 ">
          
           <Image className="w-screen h-[400px] p-4 "
             src={pro.image} 
